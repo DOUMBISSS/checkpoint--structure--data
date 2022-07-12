@@ -1,0 +1,24 @@
+Algo doublons
+
+VAR
+
+        // etat:BOOLEAN:=false;
+        i;j;k :INTEGER;
+        counter:INTEGER:=1;
+        tab:array_integer :[];
+        distinct:tab:array_integer :[];
+        sum = 0;
+    
+BEGIN
+        FOR i FROM 0 TO tab.length-1 DO
+            FOR j FROM i+1 TO tab.length-1 DO
+               if (tab[i] == tab[i]) then 
+                    sum = sum + tab[i] * 2 ;
+               END IF 
+            END_FOR
+        END_FOR
+                write(sum);
+
+END
+
+

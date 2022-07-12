@@ -1,0 +1,42 @@
+Algo distincts
+
+VAR
+
+        etat:BOOLEAN:=false;
+        i;j;k :INTEGER;
+        counter:INTEGER:=1;
+        tab:array_integer :[3];
+        distinct.tab:array_integer :[4];
+        sum = 0;
+    
+BEGIN
+        FOR i FROM 0 TO tab.length-1 DO
+            FOR j FROM 0 TO tab.length-1 DO
+               if (tab[i] == tab[i]) then 
+                  etat:=true;
+               END IF 
+            END_FOR
+                     if (etat==false)
+                        sum = sum + tab[j];
+                    END IF 
+                    etat := false;
+        END_FOR
+
+         FOR j FROM 0 TO tab.length-1 DO
+            FOR i FROM 0 TO tab.length-1 DO
+               if (tab[i] == tab[j]) then 
+                  etat:=true;
+               END IF 
+            END_FOR
+                     if (etat==false)
+                        sum = sum + tab[j];
+                    END IF 
+                    etat := false;
+        END_FOR
+
+                write(sum);
+
+END
+
+
+
